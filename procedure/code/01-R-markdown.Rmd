@@ -1,42 +1,30 @@
 ---
-title: "Analysis"
-author: "HEGSRR"
+title: "Reproduction of Chakraborty 2021: An intracategorical analysis of COVID-19 and people with disabilities"
+author: "Dermot McMillan"
 date: "`r Sys.Date()`"
 output: html_document
 editor_options:
   markdown:
     wrap: sentence
 knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../../docs") })
-nocite: '@*'
-bibliography: "../../software.bib"
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../../docs/report") })
 ---
-
-# Instructions
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents.
-For more details on using R Markdown see <https://rmarkdown.rstudio.com/lesson-1.html>.
-In the header section above, you can configure [options for this document](https://bookdown.org/yihui/rmarkdown/html-document.html), including title, author(s), and additional style and output options.
-The `nocite` and `bibliography` lines automatically add a bibliography for the software packages you have used.
-Remove the `nocite` line to suppress references you haven't cited.
-You may delete this instruction section.
 
 # Abstract
 
-Write a brief abstract about your research project.
-
-If the project is a reproduction or replication study, include a declaration of the study type with a full reference to the original study.
-For example:
+This study is a Replication of research done by Chakraborty (2021). Chakraborty analyses county level data to find trends between disability rates and COVID-19 infection rates. The study uses Bivariate Pearson product moment correlation and Generalized Estimating functions to test for the aforementioned correlations in 18 different socio-demographic categories. The purpose of the study is to analyze whether people with disabilities face disproportionate outcomes from COVID-19. T
 
 This study is a *replication* of:
 
-> citation to prior study
-
-A graphical abstract of the study could also be included as an image here.
+Chakraborty, J.
+2021.
+Social inequities in the distribution of COVID-19: An intra-categorical analysis of people with disabilities in the U.S.
+*Disability and Health Journal* 14:1-5.
+<https://doi.org/10.1016/j.dhjo.2020.101007>
 
 # Study metadata
 
-- `Key words`: Comma-separated list of keywords (tags) for searchability. Geographers often use one or two keywords each for: theory, geographic context, and methods.
+- `Key words`: COVID-19, Disability, Intersectionality, Race/ethnicity, Poverty, Reproducibility
 - `Subject`: select from the [BePress Taxonomy](http://digitalcommons.bepress.com/cgi/viewcontent.cgi?article=1008&context=reference)
 - `Date created`: date when project was started
 - `Date modified`: date of most recent revision
@@ -60,11 +48,7 @@ A graphical abstract of the study could also be included as an image here.
 
 # Study design
 
-Describe how the study relates to prior literature, e.g. is it a **original study**, **meta-analysis study**, **reproduction study**, **reanalysis study**, or **replication study**?
-
-Also describe the original study archetype, e.g. is it **observational**, **experimental**, **quasi-experimental**, or **exploratory**?
-
-Enumerate specific **hypotheses** to be tested or **research questions** to be investigated here, and specify the type of method, statistical test or model to be used on the hypothesis or question.
+The aim of this reproduction study is to implement the original study as closely as possible to reproduce the map of county level distribution of COVID-19 incidence rate, the summary statistics and bivariate correlation for disability characteristics and COVID-19 incidence.
 
 # Materials and procedure
 
